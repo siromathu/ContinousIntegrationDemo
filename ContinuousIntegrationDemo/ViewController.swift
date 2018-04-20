@@ -15,9 +15,6 @@ class ViewController: UIViewController {
         
         let isPrime = checkPrime(number: 5)
         print(isPrime)
-        
-        let isPalindrome = checkPalindrome(text: "Civic")
-        print(isPalindrome)
     }
 
     override func didReceiveMemoryWarning() {
