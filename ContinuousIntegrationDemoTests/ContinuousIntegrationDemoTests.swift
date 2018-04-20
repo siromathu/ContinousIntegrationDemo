@@ -24,7 +24,7 @@ class ContinuousIntegrationDemoTests: XCTestCase {
     }
     
     func testPrimeNumber() {
-        let isPrimeNumber = viewController.isPrime(number: 5)
+        let isPrimeNumber = viewController.checkPrime(number: 5)
         XCTAssertFalse(isPrimeNumber)
     }
 }
