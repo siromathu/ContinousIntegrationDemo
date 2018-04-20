@@ -12,17 +12,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let isPrime = checkPrime(number: 5)
+        print(isPrime)
+        
+        let isPalindrome = checkPalindrome(text: "Civic")
+        print(isPalindrome)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    func isPrime(number: Int) -> Bool {
+    func checkPrime(number: Int) -> Bool {
         return number % 2 == 0
     }
     
-    func isPalindrome(text: String) -> Bool {
+    func checkPalindrome(text: String) -> Bool {
         return text.lowercased() == String(text.lowercased().reversed())
     }
 }
